@@ -1,20 +1,28 @@
-class MyClass:
-    #Default values
-    par1 = "Default"
+#Main class
+class Animal:
+    def __init__(self, name, type):
+        self.name = name
+        self.type = type
 
-    #initilizing class
-    def __init__(self, par1):
-        self.par1 = par1
+    def speak(self):
+        print ("What does this animal say?")
 
-    #another function
-    def another_class(self, par1 = "Thing"):
-        self.par1 = par1
+#Class inherets from animal
+class Dog(Animal):
+    #overwrightis animal speak class
+    def speak(self):
+        print(f"{self.name} the dog ({self.type}) says Woof")
 
-#Defining object
-new_class = MyClass("First par")
+#class inherets from animal
+class Cat(Animal):
+    #overrights animal speak class
+    def speak(self):
+        print(f"{self.name} the cat ({self.type}) says Meoooww")
 
-new_class.another_class()
+kevin = Dog("Kevin", "Brittish Bulldog")
+kevin.speak();
 
-print(new_class.par1)
-#type
-print(type(new_class))
+rito = Cat("Rito", "Chinese Hairless");
+rito.speak()
+
+#Result = Woof
