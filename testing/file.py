@@ -1,25 +1,19 @@
-#new wrighting to file
-with open("../230_files_test.txt", "w") as file:
-    file.write("Hello this is my test")
-    file.close()
+#Ask for a sentence
 
-# reading
-with open("../230_files_test.txt", "r") as file:
-    content = file.read()
-    file.close()
+sentence = input("Sentence?")
 
-print(content)
+#Print length of sentince
 
-#Another test
+print(len(sentence))
 
-#appending to file
-with open("../230_files_test.txt", "a") as file:
-    file.write("\nHello I am appending")
-    file.close()
+#Ask for a file name (.txt)
 
-#reading new files
-with open("../230_files_test.txt", "r") as file:
-    content = file.read()
-    file.close()
+fileName = input("What would you like the file to be named?")
 
-print(content)
+#Write the sentence to the file
+
+with open(f"{fileName}.txt", "w") as f:
+    f.write(sentence)
+    f.close()
+
+print("Success, I think!")
