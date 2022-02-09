@@ -10,6 +10,8 @@ with open("../230_files_test.txt", "r") as file:
 
 print(content)
 
+#Another test
+
 #appending to file
 with open("../230_files_test.txt", "a") as file:
     file.write("\nHello I am appending")
