@@ -22,6 +22,9 @@ class Cat(Animal):
 kevin = Dog("Kevin", "Brittish Bulldog")
 kevin.speak();
 
+henry = Dog("Henry", "Pitbull")
+henry.speak()
+
 rito = Cat("Rito", "Chinese Hairless");
 rito.speak()
 
