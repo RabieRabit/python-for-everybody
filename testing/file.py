@@ -1,21 +1,20 @@
-#Ask for a sentence
+class MyClass:
+    #Default values
+    par1 = "Default"
 
-sentence = input("Sentence?")
+    #initilizing class
+    def __init__(self, par1):
+        self.par1 = par1
 
-#Print length of sentince
+    #another function
+    def another_class(self, par1 = "Thing"):
+        self.par1 = par1
 
-print(len(sentence))
+#Defining object
+new_class = MyClass("First par")
 
-#Ask for a file name (.txt)
+new_class.another_class()
 
-fileName = input("What would you like the file to be named?")
-
-#Write the sentence to the file
-
-with open(f"{fileName}.txt", "w") as f:
-    f.write(sentence)
-    f.close()
-
-print("Success, I think!")
-
-#some new work
+print(new_class.par1)
+#type
+print(type(new_class))
