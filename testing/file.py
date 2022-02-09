@@ -1,6 +1,6 @@
-print("Hello World");
+name ="Dylan"
+location = "Cape Town"
 
-def hello(name):
-    print("Hello " + name)
-# Indentations
-hello("Dylan")
+greet = f"Hello {name} welcome to {location}"
+
+print(greet)
