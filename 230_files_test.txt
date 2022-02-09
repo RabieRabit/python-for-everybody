@@ -1,4 +1,2 @@
-New file stuff
-This is line 2
-This is line 3
-This is line 4 from Kalob
+Hello this is my test
+Hello I am appending
