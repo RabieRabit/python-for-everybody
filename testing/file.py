@@ -1,4 +1,3 @@
-
 def dec(func):
     def some_func():
         print("This is before")
